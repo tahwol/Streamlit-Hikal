@@ -1,5 +1,5 @@
-streamlit
-transformers
-torch>=2.0.0
-arabic-reshaper
-python-bidi
+streamlit==1.40.2
+transformers==4.30.2
+torch==2.0.1
+arabic-reshaper==3.0.0
+python-bidi==0.6.0
