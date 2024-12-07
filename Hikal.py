@@ -4,7 +4,10 @@ import arabic_reshaper
 from bidi.algorithm import get_display
 
 # إعداد نموذج التلخيص
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+try:
+    summarizer = pipeline("summarization", model="facebook/bart-large-cnn", device=-1)  # الجهاز -1 لضمان استخدام CPU
+except Exception as e:
+    st.error(f"Error loading summarizer: {e}")
 
 # عنوان التطبيق
 st.title("📚 تطبيق المخططات الهيكلية")
