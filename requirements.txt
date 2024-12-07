@@ -3,3 +3,8 @@ transformers
 torch
 arabic-reshaper
 python-bidi
+streamlit
+transformers==4.34.0
+torch==2.0.1
+arabic-reshaper
+python-bidi
